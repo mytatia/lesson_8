@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,700&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #424551;
+}
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.first__title {
+  font-weight: 900;
+  color: #1e212c;
+  font-size: 46px;
+  line-height: 59.8px;
+  margin-bottom: 40px;
+}
+
+.main__text {
+  line-height: 26px;
+  margin-bottom: 48px;
+}
+
+.second__title {
+  font-weight: 900;
+  color: #1e212c;
+  font-size: 46px;
+  line-height: 59.8px;
+  margin-bottom: 16px;
+}
+
+.first__subtitle {
+  font-weight: 700;
+  color: #1e212c;
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 24px;
+}
+
+.page__text ul {
+  line-height: 25.6px;
+}
+
+.page__text li {
+  list-style-type: none;
+  margin-bottom: 4px;
+  padding-left: 32px;
+  background: url(../img/icons/check-round.png) 0 2px no-repeat;
+  min-height: 35px;
+}
+
+.page__text li::before {
+  content: "";
+  padding-left: 8px;
+}
+
+.second__subtitle {
+  font-weight: 700;
+  line-height: 24px;
+  color: #1e212c;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.third__subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  color: #787a80;
+  margin-bottom: 32px;
+}
+
+.second__container ul {
+  margin-bottom: 32px;
+}
+
+.second__container li {
+  font-weight: 700;
+  line-height: 25.6px;
+  list-style-type: none;
+  padding-left: 25px;
+  min-height: 30px;
+}
+
+.second__container p {
+  line-height: 25.6px;
+}
+
+.second__container li:first-of-type {
+  background: url(../img/icons/profile.png) 0 2px no-repeat;
+}
+
+.second__container li:nth-child(2) {
+  background: url(../img/icons/play.png) 0 2px no-repeat;
+}
+
+.second__container li:last-of-type {
+  background: url(../img/icons/star.png) 0 2px no-repeat;
+}
+
+.second__container li:before {
+  content: "";
+  padding-left: 8px;
+}
+
+/* Псевдокласи та псевдоелементи - Lesson 0 - Part 2 */
+
+.title {
+  color: rgb(65, 58, 58);
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.third__container div {
+  margin-bottom: 50px;
+  font-size: 45px;
+}
+.third__container div:first-child:hover {
+  color: red;
+}
+.third__container div:nth-child(2):active {
+  text-transform: uppercase;
+  color: rgb(236, 62, 91);
+}
+
+a:visited {
+  color: rgb(114, 62, 236);
+}
+
+.link:focus {
+  background: rgb(221, 240, 17);
+  color: red;
+  text-decoration: none;
+}
+p:target {
+  background-color: rgb(242, 79, 79);
+}
+.fourth__container p {
+  margin-bottom: 30px;
+}
+.fourth__container div {
+  margin-bottom: 30px;
+}
+
+.fourth__container p:first-child {
+  background-color: aqua;
+}
+.fourth__container div:first-of-type {
+  background-color: rgb(228, 250, 32);
+}
+.fourth__container div:last-of-type {
+  background-color: rgb(241, 81, 198);
+}
+.fourth__container p:last-child {
+  background-color: rgb(30, 245, 102);
+}
+.fourth__container div:last-of-type::before {
+  content: "last-of-type";
+  padding-right: 15px;
+  font-weight: 700;
+  font-size: 25px;
+  text-decoration: underline;
+}
+.fourth__container div:first-of-type:after {
+  content: "first-of-type";
+  padding-left: 15px;
+  font-weight: 700;
+  font-size: 25px;
+  text-decoration: underline;
+}
+.fourth__container p:first-child::before {
+  content: "first child";
+  padding-right: 15px;
+  font-weight: 700;
+  font-size: 25px;
+  text-decoration: underline;
+}
+.fourth__container p:last-child:after {
+  content: "last child";
+  padding-left: 15px;
+  font-weight: 700;
+  font-size: 25px;
+  text-decoration: underline;
+}
+.fourth__container p:nth-child(4) {
+  background-color: #0f30d9;
+  color: bisque;
+}
+.fourth__container p:nth-child(4):after {
+  content: "nth-child";
+  padding-left: 15px;
+  font-weight: 700;
+  font-size: 25px;
+  text-decoration: underline;
+}
+.fourth__container p:not(:last-child) {
+  font-style: italic;
+}
